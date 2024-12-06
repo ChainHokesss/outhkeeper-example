@@ -2,7 +2,7 @@ FROM oryd/oathkeeper:v0.40
 
 USER root
 
-COPY ./config /etc/config/kratos
+COPY ./config /etc/config/outhkeeper
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
