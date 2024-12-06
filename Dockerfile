@@ -2,7 +2,7 @@ FROM oryd/oathkeeper:v0.40
 
 USER root
 
-COPY ./config /etc/config/outhkeeper
+COPY ./config /etc/config/oathkeeper
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
