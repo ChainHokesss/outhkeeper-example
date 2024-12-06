@@ -3,11 +3,11 @@ FROM oryd/oathkeeper:v0.40
 USER root
 
 COPY ./config /etc/config/oathkeeper
-COPY entrypoint-admin.sh /usr/local/bin/entrypoing.sh
+COPY entrypoint-admin.sh /usr/local/bin/entrypoint-admin.sh
 
-RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint-admin.sh
 
 USER ory
 
 EXPOSE 4456
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint-admin.sh"]
