@@ -3,11 +3,11 @@
     "id": "ory:kratos:public",
     "upstream": {
       "preserve_host": true,
-      "url": "${KRATOS_URL}",
+      "url": "https://kratos-example.onrender.com",
       "strip_path": "/.ory/kratos/public"
     },
     "match": {
-      "url": "${OUTHKEEPER_URL}/.ory/kratos/public/<**>",
+      "url": "https://outhkeeper-example.onrender.com/.ory/kratos/public/<**>",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH"]
     },
     "authenticators": [
@@ -28,10 +28,10 @@
     "id": "ory:kratos-selfservice-ui-node:anonymous",
     "upstream": {
       "preserve_host": true,
-      "url": "${KRATOS_UI_URL}"
+      "url": "https://kratos-selfservice-ui-node-v1-3-1.onrender.com"
     },
     "match": {
-      "url": "${OUTHKEEPER_URL}/<{registration,welcome,recovery,verification,login,error,health/{alive,ready},**.css,**.js,**.png,**.svg,**.woff*}>",
+      "url": "https://outhkeeper-example.onrender.com/<{registration,welcome,recovery,verification,login,error,health/{alive,ready},**.css,**.js,**.png,**.svg,**.woff*}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -52,10 +52,10 @@
     "id": "ory:kratos-selfservice-ui-node:protected",
     "upstream": {
       "preserve_host": true,
-      "url": "${KRATOS_UI_URL}"
+      "url": "https://kratos-selfservice-ui-node-v1-3-1.onrender.com"
     },
     "match": {
-      "url": "${OUTHKEEPER_URL}/<{sessions,settings}>",
+      "url": "https://outhkeeper-example.onrender.com/<{sessions,settings}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -75,7 +75,7 @@
       {
         "handler": "redirect",
         "config": {
-          "to": "${OUTHKEEPER_URL}/login"
+          "to": "https://outhkeeper-example.onrender.com/login"
         }
       }
     ]
@@ -84,10 +84,10 @@
     "id": "whitesnake:recruitment:public",
     "upstream": {
       "preserve_host": true,
-      "url": "${API_URL}"
+      "url": "http://127.0.0.1:8808/"
     },
     "match": {
-      "url": "${OUTHKEEPER_URL}/<{api/docs,openapi.json}>",
+      "url": "https://outhkeeper-example.onrender.com/<{api/docs,openapi.json}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -108,10 +108,10 @@
     "id": "whitesnake:recruitment:protected",
     "upstream": {
       "preserve_host": true,
-      "url": "${API_URL}"
+      "url": "http://127.0.0.1:8808/"
     },
     "match": {
-      "url": "${OUTHKEEPER_URL}/api/v1/<**>",
+      "url": "https://outhkeeper-example.onrender.com/api/v1/<**>",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH"]
     },
     "authenticators": [
@@ -131,7 +131,7 @@
       {
         "handler": "redirect",
         "config": {
-          "to": "${OUTHKEEPER_URL}/login"
+          "to": "https://outhkeeper-example.onrender.com/login"
         }
       }
     ]
