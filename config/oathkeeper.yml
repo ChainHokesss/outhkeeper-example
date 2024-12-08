@@ -4,7 +4,7 @@ log:
 
 serve:
   proxy:
-    port: ${PROXY_PORT}
+    port: 1
     cors:
       enabled: true
       allowed_origins:
@@ -23,7 +23,7 @@ serve:
       allow_credentials: true
       debug: true
   api:
-    port: ${API_PORT}
+    port: 10000
 
 errors:
   fallback:
