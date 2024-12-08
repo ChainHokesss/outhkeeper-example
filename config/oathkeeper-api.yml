@@ -4,6 +4,7 @@ log:
 
 serve:
   proxy:
+    port: 1
     cors:
       enabled: true
       allowed_origins:
@@ -21,6 +22,8 @@ serve:
         - Content-Type
       allow_credentials: true
       debug: true
+  api:
+    port: 10000
 
 errors:
   fallback:
