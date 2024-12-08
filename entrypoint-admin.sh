@@ -3,4 +3,4 @@
 set -e
 
 echo "Start service"
-exec oathkeeper serve admin -c "/etc/config/oathkeeper/oathkeeper.yml"
+exec oathkeeper serve api -c "/etc/config/oathkeeper/oathkeeper.yml"
