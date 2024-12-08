@@ -84,7 +84,7 @@
     "id": "whitesnake:recruitment:public",
     "upstream": {
       "preserve_host": true,
-      "url": "http://127.0.0.1:8808/"
+      "url": "https://recruitment-cacebe676dd0.herokuapp.com/"
     },
     "match": {
       "url": "https://outhkeeper-example.onrender.com/<{api/docs,openapi.json}>",
@@ -108,7 +108,7 @@
     "id": "whitesnake:recruitment:protected",
     "upstream": {
       "preserve_host": true,
-      "url": "http://127.0.0.1:8808/"
+      "url": "https://recruitment-cacebe676dd0.herokuapp.com/"
     },
     "match": {
       "url": "https://outhkeeper-example.onrender.com/api/v1/<**>",
