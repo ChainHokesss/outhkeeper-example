@@ -7,7 +7,7 @@
       "strip_path": "/.ory/kratos/public"
     },
     "match": {
-      "url": "https://outhkeeper-example.onrender.com/.ory/kratos/public/<**>",
+      "url": "http://<127.0.0.1|localhost>:10000/.ory/kratos/public/<**>",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH"]
     },
     "authenticators": [
@@ -31,7 +31,7 @@
       "url": "https://kratos-selfservice-ui-node-v1-3-1.onrender.com"
     },
     "match": {
-      "url": "https://outhkeeper-example.onrender.com/<{registration,welcome,recovery,verification,login,error,health/{alive,ready},**.css,**.js,**.png,**.svg,**.woff*}>",
+      "url": "http://<127.0.0.1|localhost>:10000/<{registration,welcome,recovery,verification,login,error,health/{alive,ready},**.css,**.js,**.png,**.svg,**.woff*}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -55,7 +55,7 @@
       "url": "https://kratos-selfservice-ui-node-v1-3-1.onrender.com"
     },
     "match": {
-      "url": "https://outhkeeper-example.onrender.com/<{sessions,settings}>",
+      "url": "http://<127.0.0.1|localhost>:10000/<{sessions,settings}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -75,7 +75,7 @@
       {
         "handler": "redirect",
         "config": {
-          "to": "https://outhkeeper-example.onrender.com/login"
+          "to": "http://<127.0.0.1|localhost>:10000/login"
         }
       }
     ]
@@ -87,7 +87,7 @@
       "url": "https://recruitment-cacebe676dd0.herokuapp.com/"
     },
     "match": {
-      "url": "https://outhkeeper-example.onrender.com/<{api/docs,openapi.json}>",
+      "url": "http://<127.0.0.1|localhost>:10000/<{api/docs,openapi.json}>",
       "methods": ["GET"]
     },
     "authenticators": [
@@ -111,7 +111,7 @@
       "url": "https://recruitment-cacebe676dd0.herokuapp.com/"
     },
     "match": {
-      "url": "https://outhkeeper-example.onrender.com/api/v1/<**>",
+      "url": "http://<127.0.0.1|localhost>:10000/api/v1/<**>",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH"]
     },
     "authenticators": [
@@ -131,7 +131,7 @@
       {
         "handler": "redirect",
         "config": {
-          "to": "https://outhkeeper-example.onrender.com/login"
+          "to": "http://<127.0.0.1|localhost>:10000/login"
         }
       }
     ]

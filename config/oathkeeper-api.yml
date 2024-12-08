@@ -32,7 +32,7 @@ errors:
     redirect:
       enabled: true
       config:
-        to: https://outhkeeper-example.onrender.com/login
+        to: http://<127.0.0.1|localhost>:10000/login
         when:
           -
             error:
@@ -88,7 +88,7 @@ mutators:
   id_token:
     enabled: true
     config:
-      issuer_url: https://outhkeeper-example.onrender.com
+      issuer_url: http://<127.0.0.1|localhost>:10000
       jwks_url: file:///etc/config/oathkeeper/id_token.jwks.json
       claims: |
         {
